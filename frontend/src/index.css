@@ -2,20 +2,112 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
     font-family: 'Outfit';
 }
 
-a.active hr{
+.filter-btns{
+    /* display: flex;
+    justify-content: center; */
+    display: inline-flex;
+  appearance: none;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: center;
+  justify-content: center;
+  user-select: none;
+  position: relative;
+  white-space: break-spaces;
+  vertical-align: middle;
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  line-height: 1.4;
+  border-radius: 0px;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-family: FuturaNowTextRegular, Arial, sans-serif;
+  /* height: 100%; */
+  /* min-width: 100%; */
+  font-size: 0.875rem;
+  letter-spacing: 0px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.filter-btns:hover{
+    background: #000;
+    color: white;
+} 
+
+.filter-headings{
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.4;
+    font-family: FuturaNowTextRegular;
+    letter-spacing: 0px;
+}
+
+.breadcrumbs{
+    cursor: pointer;
+  text-decoration: none;
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  color: inherit;
+  white-space: normal;
+  font-family: FuturaNowTextRegular, Arial, sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+#main-title {
+    font-size: 2.25rem;
+    line-height: 1.07;
+    font-family: 'ITCNewBaskervilleRoman', 'Baskerville', 'Georgia', serif;
+    font-weight: 400;
+    min-width: 0px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 640px) {
+    #main-title {
+        font-size: 1.25rem;
+        line-height: 1.2;
+    }
+}
+
+
+.sort-container{
+    display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  height: 24px;
+  margin-left: auto;
+
+}
+
+.sort{
+    font-size: 0.75rem;
+  line-height: 1.4;
+  font-family: FuturaNowTextRegular, Arial, sans-serif;
+  font-weight: 300;
+  margin-right: 0px;
+  white-space: nowrap;
+  letter-spacing: 0px;
+}
+
+a.active hr {
     display: block;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
 }
 
 @media (max-width:640px) {
-    a.active{
+    a.active {
         background-color: black;
         color: white;
     }
